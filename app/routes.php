@@ -19,3 +19,9 @@ Route::get('/', function()
 Route::controller('/customers', 'CustomerController');
 
 Route::controller('/transactions', 'TransactionController');
+
+// Route group for API versioning
+Route::group(array('prefix' => 'api/v1', 'before' => 'auth.basic'), function()
+{
+    #Route::resource('url', 'UrlController');
+});

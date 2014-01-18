@@ -4,7 +4,8 @@
 	"keywords": ["framework", "laravel"],
 	"license": "MIT",
 	"require": {
-		"laravel/framework": "4.1.*"
+		"laravel/framework": "4.1.*",
+		"guilhermeguitte/behat-laravel": "dev-master"
 	},
 	"autoload": {
 		"classmap": [
@@ -29,7 +30,8 @@
 		]
 	},
 	"config": {
-		"preferred-install": "dist"
+		"preferred-install": "dist",
+		"bin-dir": "bin/"
 	},
 	"minimum-stability": "dev"
 }
